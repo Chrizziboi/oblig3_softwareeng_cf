@@ -38,6 +38,7 @@ jobs:
     - name: Display Python version
       run: python -c "import sys; print(sys.version)"
     - name: Test with pytest
-      run: echo " now testing all tests from the ${{ github.oblig3_softwareeng_cf }} repository"
-    - run: pytest isLeapYear_tester.py
+      run: |
+        echo " now testing all tests from the ${{ github.oblig3_softwareeng_cf }} repository"
+        pytest isLeapYear_tester.py
       
