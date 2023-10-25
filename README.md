@@ -2,15 +2,15 @@
 For denne obligen gikk jeg inn i oblig2 på pycharm, satt opp en versionskontroll på github, 
 pushet deretter opp hele oblig2 på et nytt repository.
 
-Når det kom til å sette opp workflow actions, tok jeg å brukte python package workflow'en 
+Når det kom til å sette opp workflow actions, brukte jeg python package workflow'en 
 for å slippe å sette det opp helt fra bunnen.
 
 i workflow filen byttet jeg et par ting:
  
- runs-on: windows-latest fra ubuntu.
+ runs-on: windows-latest fra ubuntu-latest.
  
-tok dermed å byttet python-version: ["3.9"], fra flere, som var en feil jeg hadde gjort ved å 
-velge package, for den er for flere versioner av python mens jeg trengte barefor en.
+tok dermed å byttet python-version til: ["3.9"], fra flere, som var en feil jeg hadde gjort ved å 
+velge package, for den er for flere versioner av python mens jeg trengte bare for en.
 
 tok vekk if setning for om man skal installere avhengigheter eller ikke basert på 
 om man har requirements.txt og endret den til å bare installere via requirements.txt uansett.
